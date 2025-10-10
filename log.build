@@ -1,0 +1,1315 @@
+[  0%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  0%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  0%] Built target build_info
+[  0%] Creating directories for 'vulkan-shaders-gen'
+[  3%] No download step for 'vulkan-shaders-gen'
+[  3%] No update step for 'vulkan-shaders-gen'
+[  6%] No patch step for 'vulkan-shaders-gen'
+[  6%] Performing configure step for 'vulkan-shaders-gen'
+-- The C compiler identification is Clang 20.1.8
+-- The CXX compiler identification is Clang 20.1.8
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /data/data/com.termux/files/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+[  9%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+-- Detecting CXX compiler ABI info
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /data/data/com.termux/files/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- Enabling coopmat glslc support
+-- Enabling coopmat2 glslc support
+-- Enabling dot glslc support
+-- Enabling bfloat16 glslc support
+-- Configuring done (3.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/build/ggml/src/ggml-vulkan/vulkan-shaders-gen-prefix/src/vulkan-shaders-gen-build
+[  9%] Performing build step for 'vulkan-shaders-gen'
+[ 50%] Building CXX object CMakeFiles/vulkan-shaders-gen.dir/vulkan-shaders-gen.cpp.o
+[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[ 12%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[ 16%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[100%] Linking CXX executable vulkan-shaders-gen
+[100%] Built target vulkan-shaders-gen
+[ 16%] Performing install step for 'vulkan-shaders-gen'
+-- Installing: /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/build/RelWithDebInfo/./vulkan-shaders-gen
+[ 19%] Completed 'vulkan-shaders-gen'
+[ 19%] Built target vulkan-shaders-gen
+[ 19%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/uint8-buff-stream.cpp.o
+[ 19%] Linking CXX shared library ../../bin/libggml-base.so
+[ 19%] Built target ggml-base
+[ 19%] Generate vulkan shaders
+ggml_vulkan: Generating and compiling shaders to SPIR-V
+[ 22%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:292:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  292 |             ax1 = GGML_F32_VEC_LOAD(x + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:293:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  293 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:298:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  298 |             ax2 = GGML_F32_VEC_LOAD(x + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:299:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  299 |             ay2 = GGML_F32_VEC_LOAD(y + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:304:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  304 |             ax3 = GGML_F32_VEC_LOAD(x + i + 2*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:305:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  305 |             ay3 = GGML_F32_VEC_LOAD(y + i + 2*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:310:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  310 |             ax4 = GGML_F32_VEC_LOAD(x + i + 3*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:311:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  311 |             ay4 = GGML_F32_VEC_LOAD(y + i + 3*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:316:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  316 |             ax5 = GGML_F32_VEC_LOAD(x + i + 4*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:317:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  317 |             ay5 = GGML_F32_VEC_LOAD(y + i + 4*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:322:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  322 |             ax6 = GGML_F32_VEC_LOAD(x + i + 5*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:323:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  323 |             ay6 = GGML_F32_VEC_LOAD(y + i + 5*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:328:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  328 |             ax7 = GGML_F32_VEC_LOAD(x + i + 6*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:329:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  329 |             ay7 = GGML_F32_VEC_LOAD(y + i + 6*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:334:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  334 |             ax8 = GGML_F32_VEC_LOAD(x + i + 7*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:335:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  335 |             ay8 = GGML_F32_VEC_LOAD(y + i + 7*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:344:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  344 |             ax1 = GGML_F32_VEC_LOAD(x + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:345:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  345 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:647:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  647 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:14:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:651:19: warning: passing no argument for the '...' parameter of a variadic macro is a C23 extension [-Wvariadic-macro-arguments-omitted]
+  651 |             ay2 = GGML_F32_VEC_LOAD(y + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+20 warnings generated.
+[ 22%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[ 22%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o
+[ 25%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o
+[ 25%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o
+[ 25%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o
+[ 29%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[ 29%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[ 32%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[ 32%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[ 32%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:292:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  292 |             ax1 = GGML_F32_VEC_LOAD(x + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:293:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  293 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:298:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  298 |             ax2 = GGML_F32_VEC_LOAD(x + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:299:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  299 |             ay2 = GGML_F32_VEC_LOAD(y + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:304:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  304 |             ax3 = GGML_F32_VEC_LOAD(x + i + 2*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:305:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  305 |             ay3 = GGML_F32_VEC_LOAD(y + i + 2*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:310:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  310 |             ax4 = GGML_F32_VEC_LOAD(x + i + 3*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:311:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  311 |             ay4 = GGML_F32_VEC_LOAD(y + i + 3*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:316:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  316 |             ax5 = GGML_F32_VEC_LOAD(x + i + 4*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:317:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  317 |             ay5 = GGML_F32_VEC_LOAD(y + i + 4*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:322:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  322 |             ax6 = GGML_F32_VEC_LOAD(x + i + 5*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:323:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  323 |             ay6 = GGML_F32_VEC_LOAD(y + i + 5*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:328:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  328 |             ax7 = GGML_F32_VEC_LOAD(x + i + 6*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:329:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  329 |             ay7 = GGML_F32_VEC_LOAD(y + i + 6*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:334:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  334 |             ax8 = GGML_F32_VEC_LOAD(x + i + 7*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:335:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  335 |             ay8 = GGML_F32_VEC_LOAD(y + i + 7*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:344:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  344 |             ax1 = GGML_F32_VEC_LOAD(x + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:345:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  345 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:647:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  647 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:651:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  651 |             ay2 = GGML_F32_VEC_LOAD(y + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:38:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   38 |             ax1 = GGML_F32_VEC_LOAD(x + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:39:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   39 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:42:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   42 |             ax2 = GGML_F32_VEC_LOAD(x + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:43:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   43 |             ay2 = GGML_F32_VEC_LOAD(y + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:46:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   46 |             ax3 = GGML_F32_VEC_LOAD(x + i + 2*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:47:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   47 |             ay3 = GGML_F32_VEC_LOAD(y + i + 2*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:50:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   50 |             ax4 = GGML_F32_VEC_LOAD(x + i + 3*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:51:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   51 |             ay4 = GGML_F32_VEC_LOAD(y + i + 3*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:54:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   54 |             ax5 = GGML_F32_VEC_LOAD(x + i + 4*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:55:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   55 |             ay5 = GGML_F32_VEC_LOAD(y + i + 4*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:58:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   58 |             ax6 = GGML_F32_VEC_LOAD(x + i + 5*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:59:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   59 |             ay6 = GGML_F32_VEC_LOAD(y + i + 5*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:62:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   62 |             ax7 = GGML_F32_VEC_LOAD(x + i + 6*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:63:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   63 |             ay7 = GGML_F32_VEC_LOAD(y + i + 6*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:66:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   66 |             ax8 = GGML_F32_VEC_LOAD(x + i + 7*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:67:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   67 |             ay8 = GGML_F32_VEC_LOAD(y + i + 7*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:74:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   74 |             ax1 = GGML_F32_VEC_LOAD(x + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.cpp:75:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+   75 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+38 warnings generated.
+[ 35%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:292:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  292 |             ax1 = GGML_F32_VEC_LOAD(x + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:293:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  293 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:298:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  298 |             ax2 = GGML_F32_VEC_LOAD(x + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:299:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  299 |             ay2 = GGML_F32_VEC_LOAD(y + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:304:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  304 |             ax3 = GGML_F32_VEC_LOAD(x + i + 2*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:305:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  305 |             ay3 = GGML_F32_VEC_LOAD(y + i + 2*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:310:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  310 |             ax4 = GGML_F32_VEC_LOAD(x + i + 3*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:311:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  311 |             ay4 = GGML_F32_VEC_LOAD(y + i + 3*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:316:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  316 |             ax5 = GGML_F32_VEC_LOAD(x + i + 4*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:317:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  317 |             ay5 = GGML_F32_VEC_LOAD(y + i + 4*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:322:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  322 |             ax6 = GGML_F32_VEC_LOAD(x + i + 5*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:323:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  323 |             ay6 = GGML_F32_VEC_LOAD(y + i + 5*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:328:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  328 |             ax7 = GGML_F32_VEC_LOAD(x + i + 6*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:329:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  329 |             ay7 = GGML_F32_VEC_LOAD(y + i + 6*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:334:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  334 |             ax8 = GGML_F32_VEC_LOAD(x + i + 7*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:335:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  335 |             ay8 = GGML_F32_VEC_LOAD(y + i + 7*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:344:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  344 |             ax1 = GGML_F32_VEC_LOAD(x + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:345:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  345 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:647:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  647 |             ay1 = GGML_F32_VEC_LOAD(y + i);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+In file included from /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8:
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/vec.h:651:19: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+  651 |             ay2 = GGML_F32_VEC_LOAD(y + i + 1*ggml_f32_epr);
+      |                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8040:42: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 8040 |                         GGML_F32_VEC k = GGML_F32_VEC_LOAD(knl_data + (knl_y * p.knl_w + knl_x) * c + c_i);
+      |                                          ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:8041:42: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 8041 |                         GGML_F32_VEC s = GGML_F32_VEC_LOAD(src_data + (src_y * p.src_w + src_x) * c + c_i);
+      |                                          ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:9598:51: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 9598 |                                 GGML_F32_VEC t0 = GGML_F32_VEC_LOAD(s0 + i + j*ggml_f32_epr + ii*nc);
+      |                                                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:9599:51: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 9599 |                                 GGML_F32_VEC t1 = GGML_F32_VEC_LOAD(B + i + j*ggml_f32_epr + g*nc);
+      |                                                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:9600:51: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 9600 |                                 GGML_F32_VEC t2 = GGML_F32_VEC_LOAD(C + i + j*ggml_f32_epr + g*nc);
+      |                                                   ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:9686:46: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 9686 |                             svfloat32_t vA = GGML_F32_VEC_LOAD(&A[h*nc + k]);
+      |                                              ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:9687:46: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 9687 |                             svfloat32_t vB = GGML_F32_VEC_LOAD(&B[k + g*nc]);
+      |                                              ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:9688:46: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 9688 |                             svfloat32_t vC = GGML_F32_VEC_LOAD(&C[k + g*nc]);
+      |                                              ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:9689:47: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 9689 |                             svfloat32_t vs0 = GGML_F32_VEC_LOAD(&s0[ii*nc + k]);
+      |                                               ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:191:29: note: expanded from macro 'GGML_F32_VEC_LOAD'
+  191 | #define GGML_F32_VEC_LOAD   GGML_F32xt_LOAD
+      |                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10228:43: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 10228 |                         GGML_F32X v_vec = GGML_F32X_LOAD(&v[t_h_j_offset]);
+       |                                           ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10171:32: note: expanded from macro 'GGML_F32X_LOAD'
+ 10171 |         #define GGML_F32X_LOAD GGML_F32xt_LOAD
+       |                                ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10229:52: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 10229 |                         GGML_F32X prev_state_vec = GGML_F32X_LOAD(&state_prev[h_2d_i_j_offset]);
+       |                                                    ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10171:32: note: expanded from macro 'GGML_F32X_LOAD'
+ 10171 |         #define GGML_F32X_LOAD GGML_F32xt_LOAD
+       |                                ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10230:45: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 10230 |                         GGML_F32X dst_vec = GGML_F32X_LOAD(&dst_data[t_h_j_offset]);
+       |                                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10171:32: note: expanded from macro 'GGML_F32X_LOAD'
+ 10171 |         #define GGML_F32X_LOAD GGML_F32xt_LOAD
+       |                                ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10441:43: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 10441 |                         GGML_F32X v_vec = GGML_F32X_LOAD(&v[t_h_j_offset]);
+       |                                           ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10387:32: note: expanded from macro 'GGML_F32X_LOAD'
+ 10387 |         #define GGML_F32X_LOAD GGML_F32xt_LOAD
+       |                                ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10442:52: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 10442 |                         GGML_F32X prev_state_vec = GGML_F32X_LOAD(&state_prev[h_2d_i_j_offset]);
+       |                                                    ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10387:32: note: expanded from macro 'GGML_F32X_LOAD'
+ 10387 |         #define GGML_F32X_LOAD GGML_F32xt_LOAD
+       |                                ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10443:45: warning: passing no argument for the '...' parameter of a variadic macro is a C++20 extension [-Wvariadic-macro-arguments-omitted]
+ 10443 |                         GGML_F32X dst_vec = GGML_F32X_LOAD(&dst_data[t_h_j_offset]);
+       |                                             ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/ops.cpp:10387:32: note: expanded from macro 'GGML_F32X_LOAD'
+ 10387 |         #define GGML_F32X_LOAD GGML_F32xt_LOAD
+       |                                ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:164:87: note: expanded from macro 'GGML_F32xt_LOAD'
+  164 | #define GGML_F32xt_LOAD(...)              GGML_F32xt_LOAD_IMPL(DEFAULT_PG, __VA_ARGS__)
+      |                                                                                       ^
+/data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml-cpu/simd-mappings.h:163:9: note: macro 'GGML_F32xt_LOAD_IMPL' defined here
+  163 | #define GGML_F32xt_LOAD_IMPL(pg, a, ...)  svld1_f32(pg, a)
+      |         ^
+35 warnings generated.
+[ 35%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[ 38%] Building CXX object ggml/src/ggml-vulkan/CMakeFiles/ggml-vulkan.dir/ggml-vulkan.cpp.o
+[ 38%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/quants.c.o
+[ 41%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/repack.cpp.o
+[ 41%] Linking CXX shared library ../../bin/libggml-cpu.so
+[ 41%] Built target ggml-cpu
+[ 41%] Building CXX object ggml/src/ggml-vulkan/CMakeFiles/ggml-vulkan.dir/ggml-vulkan-shaders.cpp.o
+[ 45%] Linking CXX shared library ../../../bin/libggml-vulkan.so
+[ 45%] Built target ggml-vulkan
+[ 45%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+[ 48%] Linking CXX shared library ../../bin/libggml.so
+[ 48%] Built target ggml
+[ 48%] Building CXX object src/CMakeFiles/llama.dir/llama.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/llama.dir/llama-adapter.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/llama.dir/llama-arch.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/llama.dir/llama-batch.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/llama.dir/llama-chat.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/llama-context.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/llama-cparams.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/llama-grammar.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/llama.dir/llama-graph.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/llama.dir/llama-hparams.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/llama.dir/llama-impl.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/llama.dir/llama-io.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/llama.dir/llama-kv-cache.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/llama-kv-cache-iswa.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/llama-lora-training.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/llama-memory.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/llama-memory-hybrid.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/llama-memory-recurrent.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/llama-mmap.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/llama.dir/llama-model-load-input.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/llama.dir/llama-model-load.cpp.o
+[ 74%] Building CXX object src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
+[ 74%] Building CXX object src/CMakeFiles/llama.dir/llama-model-saver.cpp.o
+[ 74%] Building CXX object src/CMakeFiles/llama.dir/llama-model.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/llama.dir/llama-quant.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/llama.dir/llama-sampling.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/llama.dir/llama-vocab.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/llama.dir/unicode-data.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/llama.dir/unicode.cpp.o
+[ 80%] Linking CXX shared library ../bin/libllama.so
+[ 80%] Built target llama
+[ 80%] Building CXX object common/CMakeFiles/common.dir/arg.cpp.o
+[ 83%] Building CXX object common/CMakeFiles/common.dir/chat-parser.cpp.o
+[ 83%] Building CXX object common/CMakeFiles/common.dir/chat.cpp.o
+[ 83%] Building CXX object common/CMakeFiles/common.dir/common.cpp.o
+[ 87%] Building CXX object common/CMakeFiles/common.dir/console.cpp.o
+[ 87%] Building CXX object common/CMakeFiles/common.dir/json-partial.cpp.o
+[ 87%] Building CXX object common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.o
+[ 90%] Building CXX object common/CMakeFiles/common.dir/llguidance.cpp.o
+[ 90%] Building CXX object common/CMakeFiles/common.dir/log.cpp.o
+[ 90%] Building CXX object common/CMakeFiles/common.dir/ngram-cache.cpp.o
+[ 93%] Building CXX object common/CMakeFiles/common.dir/regex-partial.cpp.o
+[ 93%] Building CXX object common/CMakeFiles/common.dir/sampling.cpp.o
+[ 96%] Building CXX object common/CMakeFiles/common.dir/speculative.cpp.o
+[ 96%] Linking CXX static library libcommon.a
+[ 96%] Built target common
+[100%] Building CXX object examples/training/CMakeFiles/llama-finetune-lora.dir/finetune-lora.cpp.o
+[100%] Linking CXX executable ../../bin/llama-finetune-lora
+ld.lld: error: undefined reference: __cxa_init_primary_exception
+>>> referenced by ../../bin/libllama.so (disallowed by --no-allow-shlib-undefined)
+
+ld.lld: error: undefined reference: std::exception_ptr::__from_native_exception_pointer(void*)
+>>> referenced by ../../bin/libllama.so (disallowed by --no-allow-shlib-undefined)
+c++: error: linker command failed with exit code 1 (use -v to see invocation)
+make[3]: *** [examples/training/CMakeFiles/llama-finetune-lora.dir/build.make:108: bin/llama-finetune-lora] Error 1
+make[2]: *** [CMakeFiles/Makefile2:4592: examples/training/CMakeFiles/llama-finetune-lora.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:4599: examples/training/CMakeFiles/llama-finetune-lora.dir/rule] Error 2
+make: *** [Makefile:1376: llama-finetune-lora] Error 2
