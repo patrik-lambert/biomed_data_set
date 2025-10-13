@@ -1,0 +1,12 @@
+ggml_vulkan: Found 1 Vulkan devices:
+ggml_vulkan: 0 = Mali-G715 (Mali-G715) | uma: 1 | fp16: 1 | warp size: 16 | shared memory: 32768 | int dot: 1 | matrix cores: KHR_coopmat
+build: 5955 (e05c62a2) with clang version 20.1.8 for aarch64-unknown-linux-android24
+main: llama backend init
+main: load the model and apply lora adapter, if any
+llama_model_load_from_file_impl: using device Vulkan0 (Mali-G715) - 15233 MiB free
+gguf_init_from_file_impl: tensor 'blk.0.ffn_down.weight' of type 36 (TYPE_IQ4_NL_4_4 REMOVED, use IQ4_NL with runtime repacking) has 6912 elements per row, not a multiple of block size (0)
+gguf_init_from_file_impl: failed to read tensor info
+llama_model_load: error loading model: llama_model_loader: failed to load model from ggml-model-i2_s.gguf
+llama_model_load_from_file_impl: failed to load model
+common_init_from_params: failed to load model 'ggml-model-i2_s.gguf'
+main: error: unable to load model
