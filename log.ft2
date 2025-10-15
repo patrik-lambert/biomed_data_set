@@ -136,13 +136,13 @@ LoRA buffer size = 9.00 MiB
 LoRA adapter contains 96 tensor pairs and is now registered with context
 /data/data/com.termux/files/home/qvac-ext-lib-llama.cpp/ggml/src/ggml.c:6430: ggml_compute_backward: unsupported ggml op for backward pass: FLASH_ATTN_EXT
 
-0: 0x785197c8a0 
-1: 0x785197c860 ggml_print_backtrace
-2: 0x785198d114 ggml_abort
-3: 0x785198a3c4 ggml_build_backward_expand
-4: 0x7851997240 
-5: 0x78519979d0 ggml_opt_alloc
-6: 0x7847b038c0 _ZN13llama_context14opt_epoch_iterEP16ggml_opt_datasetP15ggml_opt_resultRKNSt6__ndk16vectorIiNS4_9allocatorIiEEEESA_R11llama_batchPFvbP16ggml_opt_contextS1_S3_lllEblll
-7: 0x7847b03d14 _ZN13llama_context9opt_epochEP16ggml_opt_datasetP15ggml_opt_resultS3_lPFvbP16ggml_opt_contextS1_S3_lllES7_
-8: 0x577f326490 
-9: 0x784e6d4218 __libc_init
+0: 0x774b7a38a0 
+1: 0x774b7a3860 ggml_print_backtrace
+2: 0x774b7b4114 ggml_abort
+3: 0x774b7b13c4 ggml_build_backward_expand
+4: 0x774b7be240 
+5: 0x774b7be9d0 ggml_opt_alloc
+6: 0x77538f98c0 _ZN13llama_context14opt_epoch_iterEP16ggml_opt_datasetP15ggml_opt_resultRKNSt6__ndk16vectorIiNS4_9allocatorIiEEEESA_R11llama_batchPFvbP16ggml_opt_contextS1_S3_lllEblll
+7: 0x77538f9d14 _ZN13llama_context9opt_epochEP16ggml_opt_datasetP15ggml_opt_resultS3_lPFvbP16ggml_opt_contextS1_S3_lllES7_
+8: 0x633541e490 
+9: 0x774e297218 __libc_init
