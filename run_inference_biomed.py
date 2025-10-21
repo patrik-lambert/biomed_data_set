@@ -80,7 +80,7 @@ def run_llama_inference(
             "-f", temp_file_path,
             "--temp", str(temperature),
             "--top-p", str(top_p),
-            "-top-k", str(top_k),
+            "--top-k", str(top_k),
             "-fa", "off",
             "--no-display-prompt"
         ]
