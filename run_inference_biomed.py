@@ -82,6 +82,7 @@ def run_llama_inference(
             "--top-p", str(top_p),
             "--top-k", str(top_k),
             "-fa", "off",
+            "-n", "50", # number of tokens to generate
             "--no-display-prompt"
         ]
         
@@ -125,6 +126,9 @@ def run_llama_inference(
 
 def format_output(line: str, generated_text: str, time_inference: datetime.timedelta) -> Dict[str, Any]:
     """Format the output with original data and generated text."""
+    # Split generated_text at the first newline character
+    if "\n" in generated_text:
+        generated_text = generated_text.split('\n', 1)[0]
     output = {
         "prompt": line,
         "generated_text": generated_text,
@@ -140,7 +144,7 @@ def main():
     # Validate model file exists
     if not os.path.exists(args.model):
         print(f"Error: Model file '{args.model}' not found", file=sys.stderr)
-        sys.exit(1)
+        #sys.exit(1)
     
     # Validate llama-cpp executable
     try:
@@ -148,7 +152,7 @@ def main():
     except (subprocess.TimeoutExpired, FileNotFoundError):
         print(f"Error: Cannot find or run '{args.llama_cpp_path}'", file=sys.stderr)
         print("Make sure llama.cpp is installed and the path is correct", file=sys.stderr)
-        sys.exit(1)
+        #sys.exit(1)
     
     # Read input data
     print(f"Reading data from {args.input}", file=sys.stderr)
