@@ -1,0 +1,101 @@
+Reading data from ../biomed_data_set/test.txt
+Processing segment 1
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpll5ht11u.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.529605
+Processing segment 2
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpxon2rpaf.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.457134
+Processing segment 3
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpim4crtap.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.461250
+Processing segment 4
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmp2zm6ac47.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:20.727355
+Processing segment 5
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpt3w5h844.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.506802
+Processing segment 6
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpvgrf_3nx.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.711285
+Processing segment 7
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpbr7g74zf.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:20.863596
+Processing segment 8
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpmrz8_4t6.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.620455
+Processing segment 9
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpofxlr1mr.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.420391
+Processing segment 10
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmp_t97aatn.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.730414
+Processing segment 11
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmprzjotrro.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.523648
+Processing segment 12
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpd92vzxoj.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:20.593804
+Processing segment 13
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmprtrxx8gb.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:21.856020
+Processing segment 14
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpm8nk1z8_.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:24.822179
+Processing segment 15
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpp__atn90.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:21.514444
+Processing segment 16
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmphjjf9xc5.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:24.191143
+Processing segment 17
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmptulg3uqw.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:24.547108
+Processing segment 18
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpq6anxhri.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:21.567858
+Processing segment 19
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpab1_pxoc.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:21.195066
+Processing segment 20
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpx39qoqfy.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:21.041845
+Processing segment 21
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpnqtmwv4s.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:21.294175
+Processing segment 22
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmprrpbcj0e.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:20.998163
+Processing segment 23
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpyovfv2su.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:21.335613
+Processing segment 24
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmp_y9bpxc1.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:24.177931
+Processing segment 25
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpaz20mowe.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:24.050156
+Processing segment 26
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpvi5orq3z.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:24.034688
+Processing segment 27
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmp6xxniar2.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.641924
+Processing segment 28
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpj7i7hzqm.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.770368
+Processing segment 29
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpgcbn8ip_.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:20.677882
+Processing segment 30
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpue_iz9qr.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.462684
+Processing segment 31
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpag41xivp.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:23.678612
+Processing segment 32
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmprraiivya.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:25.189021
+Processing segment 33
+Running command: ../qvac-ext-lib-llama.cpp/build/bin/llama-cli -m ggml-model-TQ2_0.gguf -ngl 999 -c 2048 -s 42 -f /data/data/com.termux/files/usr/tmp/tmpm6srjc4n.txt --temp 0.0 --top-p 1.0 --top-k 0 -fa off -n 50 --no-display-prompt
+Time taken: 0:00:24.879639
+Processing complete
