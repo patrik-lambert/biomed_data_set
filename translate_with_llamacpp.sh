@@ -30,7 +30,7 @@ do
         do
 
             python ../biomed_data_set/translate_with_llamacpp.py --input ../biomed_data_set/wmt24pp-head50.$src.txt --src-lang $src --tgt-lang $tgt \
-            --output ../biomed_data_set/wmt24pp-head50.$model_version_stripped.$tgt.txt --model $model_full --llama-cpp-path ./build/bin/llama-cli \
+            --output ../biomed_data_set/wmt24pp-head50.$model_version_stripped.$tgt.txt --model $model_version --llama-cpp-path ./build/bin/llama-cli \
             --temp $temp --top-k $top_k --top-p $top_p --min-p $min_p --presence-penalty $presence_penalty &> ../biomed_data_set/wmt24pp-head50.$model_version_stripped.$tgt.log
 
         done
